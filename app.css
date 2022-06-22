@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Montserrat' !important;
+}
+
+.font {
+    font-family: 'Montserrat';
+}
+
+.hero-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hero-text {
+    font-size: clamp(2rem, 5vw, 4rem)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: #e5e5e5;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: start;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+
+    transition: all linear;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.navbar *,
+*::before,
+*::after {
+    outline: none !important;
+    border: none !important;
+}
+
+.dropdown-divider {
+    border: solid 0.5px grey !important;
+}
+
+.navbar-brand {
+    font-size: 1.85rem;
+    color: #fca311;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: -4px;
+}
+
+.navbar-brand:hover {
+    color: #edb322;
+    text-decoration: underline;
+}
+
+
+.links {
+    display: flex;
+    justify-content: start;
+    transition: all linear;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: rgb(252, 190, 56);
+    text-decoration: underline;
+}
+
+.nav-link {
+    color: rgb(20, 20, 20);
+    transition: .2s all ease-out;
+
+}
+
+/* Navbar */
+
+
+/* Sections */
+.blurb h2 {
+    color: #fca311;
+    font-weight: 100;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.blurb p {
+    color: rgb(59, 59, 59);
+    font-weight: 100;
+    font-size: 1.25rem;
+    line-height: 2;
+    margin: 20px;
+}
+
+.hero-icon {
+    padding: 1rem 3rem 1rem 0rem;
+}
+
+.content {
+    margin-top: 2px;
+}
+
+#headingGroup span {
+    color: red;
+}
+
+#headingGroup h1 {
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+
+.sekcja1 {
+    padding-top: 5rem;
+}
+
+.sekcja3 {
+    padding: 3rem 0 3rem 0;
+}
+
+.mapa {
+    width: 650px;
+    height: 450px;
+}
+
+h2 {
+    font-weight: 400 !important;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+}
+
+.lead {
+    color: black;
+    font-weight: 400 !important;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 2px;
+}
+
+.infos {
+    margin-top: 5rem;
+}
+
+.info {
+    margin-top: 2rem;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.info2 {
+    margin-top: 2rem;
+    font-family: 'Montserrat';
+    font-size: 11rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Sections */
+
+
+
+/* Footer  */
+.kontakt {
+    padding: 4rem 0 5rem 0;
+}
+
+
+.kontakt-container {
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    font-size: 1em;
+    border-radius: 60%;
+    width: 40px;
+    height: 40px;
+}
+
+.logo svg {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.galeria {
+    padding: 8rem 0 3rem 0;
+}
+
+/* Footer  */
+
+
+@media (max-width: 1200px) {
+    .kontakt-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mapka {
+        order: 2;
+        align-self: center;
+        width: 100%;
+    }
+
+    .info {
+        order: 1;
+        padding-bottom: 3rem;
+        justify-content: flex-start;
+        align-self: center;
+    }
+
+    #headingGroup h1 {
+        font-weight: 200;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .mapa {
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 700px) {
+    .mapa {
+        width: 300px;
+        height: 150px;
+    }
+
+    .info {
+        margin-left: 0rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hero-icon {
+        padding: 1rem 3rem 1rem 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .ham-menu {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        right: 20px;
+        top: 9px;
+        width: 50px;
+        height: 50px;
+        gap: 10px;
+        transition: 0.3s all ease-out;
+        padding-right: .25rem;
+        border-radius: 10%;
+    }
+
+    .ham-menu:hover .bar,
+    .ham-menu:focus .bar {
+        background-color: #ffcc00;
+    }
+
+    /* 
+    .logo-nav {
+        width: 200px;
+        position: relative;
+        top: -10px;
+
+    } */
+
+    .bar {
+        width: 40px;
+        height: 5px;
+        background-color: #fca311;
+        transition: 150ms all ease-out;
+    }
+
+    .links {
+        display: none;
+        position: absolute;
+        color: black;
+        transition: 0.3 all linear;
+    }
+
+    .bar2 {
+        width: 25px;
+    }
+}
+
+
+
+/* klasy do js */
+.ham-menu-active {
+    /* transition: .3 all cubic-bezier(.06, .76, 1, .38); */
+}
+
+.ham-menu-active .bar1 {
+    transform: rotate(-45deg) translateY(12px) translateX(-7px);
+}
+
+.ham-menu-active .bar2 {
+    width: 0px;
+}
+
+.ham-menu-active .bar3 {
+    transform: rotate(45deg) translateY(-14px) translateX(-10px);
+    /* transition: .3 all cubic-bezier(.06, .76, 1, .38); */
+}
+
+.nav-link-active {
+    transition: .3s all ease-in-out;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 67px;
+    left: 0px;
+    width: 100%;
+    justify-content: center;
+    z-index: 12;
+    background-color: #e5e5e5;
+}
+
+.links-scrolled {
+    background: rgba(175, 175, 175, 0.7) !important;
+    transition: background 200ms linear;
+}
+
+.scrolled {
+    background: rgba(175, 175, 175, 0.7) !important;
+    transition: background 200ms linear;
+    /* transition-delay: 100ms; */
+}
+
+.copy {
+    font-weight: bold;
+}
+
+.cookiesContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    bottom: -50vh;
+    right: 0;
+    left: 0;
+    padding: 1.5rem;
+    background-color: #fca211bd;
+    gap: 2rem;
+    align-items: center;
+    transition: 500ms all ease-out;
+}
+
+.cookiesText {}
+
+.cookiebtn {
+    background-color: gray;
+    color: white;
+    padding: .5rem;
+    border-radius: .3rem;
+    border: none;
+    transition: 300ms all ease-out;
+    font-size: 1.1em;
+}
+
+.cookiebtn:hover {
+    background-color: black;
+}
+
+.podpunkty {
+    color: #fca311;
+}
+
+@media (max-width: 700px) {
+    .cookiesContainer {
+        flex-direction: column;
+    }
+}
